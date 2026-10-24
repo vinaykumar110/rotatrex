@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RotateX</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>RotateX <span>↻</span></h1>
+      <p>Watch at your angle.</p>
+    </header>
+
+    <section class="mode-section">
+      <label for="mode">Rotation mode</label>
+      <select id="mode">
+        <option value="video">Video only</option>
+        <option value="page">Full webpage</option>
+      </select>
+    </section>
+
+    <section class="rotation-section">
+      <div class="angle-display">
+        <label for="angle">Rotation angle</label>
+        <output id="angleValue">0°</output>
+      </div>
+
+      <input
+        type="range"
+        id="angle"
+        min="0"
+        max="360"
+        value="0"
+        step="1"
+      >
+
+      <div class="range-labels">
+        <span>0°</span>
+        <span>180°</span>
+        <span>360°</span>
+      </div>
+    </section>
+
+    <button id="reset" type="button">Reset rotation</button>
+    
+    <button id="floatPlayer">Open Floating Player</button>
+
+
+    <footer>
+      <p>Made for sideways watching.</p>
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

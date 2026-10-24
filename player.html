@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RotateX Player</title>
+  <link rel="stylesheet" href="player.css">
+</head>
+<body>
+  <header id="titlebar">
+    <div class="brand">
+      <span class="logo">R</span>
+      <span>RotateX <span class="muted">Player</span></span>
+    </div>
+    <span class="drag-hint">Drag to move</span>
+  </header>
+
+  <main>
+    <div id="videoStage">
+      <video id="video" autoplay playsinline controls></video>
+      <div id="placeholder">
+        <div class="play-icon">▶</div>
+        <h2>RotateX Player</h2>
+        <p>Your floating video will appear here.</p>
+      </div>
+    </div>
+
+    <section class="controls">
+      <div class="rotation-heading">
+        <label for="angle">Rotation</label>
+        <output id="angleValue">0°</output>
+      </div>
+
+      <input id="angle" type="range" min="0" max="360" value="0">
+
+      <div class="quick-angles">
+        <button data-angle="0">0°</button>
+        <button data-angle="90">90°</button>
+        <button data-angle="180">180°</button>
+        <button data-angle="270">270°</button>
+      </div>
+    </section>
+
+    <footer>
+      <span id="status">Waiting for video…</span>
+      <button id="fitButton">Fit video</button>
+    </footer>
+  </main>
+
+  <script src="player.js"></script>
+</body>
+</html>

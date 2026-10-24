@@ -1,0 +1,19 @@
+
+{
+  "manifest_version": 3,
+  "name": "RotateX",
+  "version": "1.1.0",
+  "description": "A customizable video player for comfortable viewing.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabCapture"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "RotateX"
+  }
+  ,"background": {
+  "service_worker": "background.js"
+}
+}

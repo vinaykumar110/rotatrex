@@ -1,0 +1,157 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 300px;
+  margin: 0;
+  background: #111318;
+  color: #f4f5f7;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 23px;
+  letter-spacing: 0.5px;
+}
+
+h1 span {
+  color: #8b7cff;
+}
+
+header p,
+footer p {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+header p {
+  margin: 6px 0 0;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #c8cbd3;
+  font-size: 13px;
+}
+
+select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #343744;
+  border-radius: 8px;
+  background: #1c1f27;
+  color: white;
+  font-size: 13px;
+}
+
+.angle-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.angle-display label {
+  margin-bottom: 0;
+}
+
+#angleValue {
+  color: #a69bff;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 22px 0 8px;
+  accent-color: #8b7cff;
+  cursor: pointer;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  color: #858b98;
+  font-size: 11px;
+}
+
+#reset {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #8b7cff;
+  color: #111318;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background: #a69bff;
+}
+
+footer {
+  margin-top: 18px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* Floating Player button */
+#floatPlayer {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px 14px;
+
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.25);
+}
+
+#floatPlayer:hover {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+  transform: translateY(-2px);
+}
+
+#floatPlayer:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
+}
+
+#floatPlayer:focus-visible {
+  outline: 2px solid #a5b4fc;
+  outline-offset: 3px;
+}
